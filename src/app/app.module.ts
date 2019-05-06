@@ -7,11 +7,13 @@ import { AppComponent } from './app.component';
 import { GraphQLModule } from './graphql.module';
 import { HttpClientModule } from '@angular/common/http';
 import { SigninComponent } from './components/signin/signin.component';
+import { RecipientsComponent } from './components/recipients/recipients.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SigninComponent
+    SigninComponent,
+    RecipientsComponent
   ],
   imports: [
     BrowserModule,
