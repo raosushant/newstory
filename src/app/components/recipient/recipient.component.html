@@ -1,8 +1,9 @@
-<h2> List of surveys for recipient </h2>
+<h2> List of submissions for recipient </h2>
 
 <ul>
   <li *ngFor="let sub of submissions">
-    <span> {{sub.data.submission.survey.name}} </span>
+    <a [routerLink]="['/submission', sub.data.submission.uuid]"> {{sub.data.submission.uuid}} </a>
+    - <span> {{sub.data.submission.survey.name}} </span>
     - <span> Survey ID ({{sub.data.submission.survey.uuid}}) </span>
   </li>
 </ul>

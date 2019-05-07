@@ -1,0 +1,9 @@
+<h2> List of question responses for submission </h2>
+
+<ul>
+  <li> <b>Question version uuid</b> - <b>Answer</b> </li>
+  <li *ngFor="let qResp of questionsRespList">
+    <span> {{qResp.questionVersionUuid}} </span>
+    - <span> {{qResp.sourceValue}} </span>
+  </li>
+</ul>

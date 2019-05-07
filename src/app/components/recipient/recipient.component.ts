@@ -11,7 +11,7 @@ import { forkJoin } from 'rxjs';
   styleUrls: ['./recipient.component.scss']
 })
 export class RecipientComponent implements OnInit {
-  recipientId: any;
+  recipientId: string;
   submissions: any[];
   constructor(  private route: ActivatedRoute,
     private router: Router,
@@ -57,6 +57,7 @@ export class RecipientComponent implements OnInit {
     const recipientsGQL = gql`
     query {
       submission(uuid: "${subID}") {
+        uuid
         survey {
           name,
           uuid
