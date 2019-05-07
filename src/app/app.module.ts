@@ -8,12 +8,14 @@ import { GraphQLModule } from './graphql.module';
 import { HttpClientModule } from '@angular/common/http';
 import { SigninComponent } from './components/signin/signin.component';
 import { RecipientsComponent } from './components/recipients/recipients.component';
+import { RecipientComponent } from './components/recipient/recipient.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SigninComponent,
-    RecipientsComponent
+    RecipientsComponent,
+    RecipientComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,7 @@
 <ul>
+  <li>survey taken - uuid</li>
   <li *ngFor="let item of recipients; let i = index">
-    {{i}} - {{item.uuid}}
+    <span> {{item.submissionUuids.length > 0 ? 'Y' :'N'}} </span> 
+    - <a [routerLink]="['/recipient', item.uuid]"> {{item.uuid}} </a>
   </li>
 </ul>
